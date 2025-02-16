@@ -1,0 +1,84 @@
+.container {
+    background: var(--color-white);
+    padding: var(--space-md);
+    border-radius: var(--radius-lg);
+    margin-bottom: var(--space-md);
+    box-shadow: var(--shadow-sm);
+  }
+  
+  .container:hover {
+    background: rgba(var(--color-primary-rgb), 0.05);
+    transform: translateX(5px);
+  
+  }
+  
+  .heading {
+    color: var(--color-primary);
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: var(--space-md);
+    position: relative;
+  }
+  
+  .heading::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 40px;
+    height: 3px;
+    background: var(--color-accent);
+  }
+  
+
+
+  .editBtn {
+    padding: var(--space-xs) var(--space-sm);
+    border-radius: var(--radius-sm);
+    transition: all 0.2s ease;
+    background: var(--color-primary);
+    color: var(--color-white);
+  }
+  
+  .editBtn:hover {
+    color: var(--color-primary);
+    background: rgba(var(--color-error-rgb), 0.1);
+    /* background: rgba(var(--color-primary-rgb), 0.05); */
+    letter-spacing: 0.5px;
+  }
+  
+  .inputGroup {
+    position: relative;
+    margin-bottom: var(--space-md);
+  }
+  
+  .inputLabel {
+    position: absolute;
+    left: var(--space-sm);
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--color-muted);
+    transition: all 0.3s ease;
+    pointer-events: none;
+  }
+  
+  .inputField {
+    width: 100%;
+    padding: var(--space-sm);
+    border: 2px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    transition: all 0.3s ease;
+  }
+  
+  .inputField:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(var(--color-primary-rgb), 0.1);
+  }
+  
+  .inputField:focus + .inputLabel,
+  .inputField:not(:placeholder-shown) + .inputLabel {
+    top: -10px;
+    left: 0;
+    font-size: 0.8rem;
+    color: var(--color-primary);
+  }

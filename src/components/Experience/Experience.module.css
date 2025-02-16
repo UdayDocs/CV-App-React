@@ -1,0 +1,86 @@
+.container {
+    background: var(--color-white);
+    padding: var(--space-md);
+    border-radius: var(--radius-lg);
+    margin-bottom: var(--space-md);
+  }
+
+
+  .container:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+  }
+  
+  .heading {
+    color: var(--color-primary);
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: var(--space-md);
+    position: relative;
+  }
+  
+  .heading::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 40px;
+    height: 3px;
+    background: var(--color-accent);
+  }
+  
+
+  
+  .timelineItem {
+    position: relative;
+    padding-left: var(--space-lg);
+    margin-bottom: var(--space-lg);
+  }
+  
+  .timelineItem::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    background: var(--color-accent);
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px rgba(var(--color-accent-rgb), 0.1);
+  }
+
+  .timelineItem:hover {
+    background: rgba(var(--color-primary-rgb), 0.05);
+    transform: translateX(5px);
+
+  } 
+  
+  .dateRange {
+    color: var(--color-muted);
+    font-size: 0.9rem;
+    margin: var(--space-xs) 0;
+    position: relative;
+    padding-left: var(--space-sm);
+  }
+  
+  .dateRange::before {
+    content: '▹';
+    position: absolute;
+    left: 0;
+    color: var(--color-primary);
+  }
+
+  .deleteBtn {
+    background: rgba(var(--color-error-rgb), 0.1);
+    color: var(--color-error);
+    padding: var(--space-xs) var(--space-sm);
+    border-radius: var(--radius-sm);
+    margin-top: var(--space-xs);
+    transition: all 0.2s ease;
+  }
+  
+  .deleteBtn:hover {
+    background: var(--color-error);
+    color: var(--color-white);
+    transform: scale(1.05);
+  }

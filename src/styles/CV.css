@@ -1,0 +1,34 @@
+/* Add these global CV styles */
+.cv-preview {
+  background: rgb(255, 255, 255);
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+.cv-print-button {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  padding: 1rem 2rem;
+  background: var(--color-primary);
+  color: white;
+  border-radius: 50px;
+  box-shadow: var(--shadow-lg);
+  transition: all 0.3s ease;
+}
+
+.cv-print-button:hover {
+  transform: translateY(-3px);
+  background: var(--color-secondary);
+}
+
+@media print {
+  .cv-preview {
+    box-shadow: none;
+    padding: 0;
+  }
+  
+  .cv-print-button {
+    display: none;
+  }
+}

@@ -1,0 +1,97 @@
+/* .container {
+  background: var(--color-white);
+  background: rgb(74, 165, 56);
+
+  min-height: 100vh;
+  padding: var(--space-xl);
+  box-shadow: var(--shadow-lg);
+  position: relative;
+  overflow: hidden;
+  animation: fadeIn 0.5s ease;
+} */
+
+.header {
+  text-align: center;
+  padding-bottom: var(--space-xl);
+  margin-bottom: var(--space-xl);
+  border-bottom: 2px solid var(--color-black);
+}
+
+.name {
+  font-size: 2.5rem;
+  color: var(--color-black);
+  margin-bottom: var(--space-sm);
+  letter-spacing: -0.5px;
+}
+
+.contactInfo {
+  display: flex;
+  gap: var(--space-lg);
+  justify-content: center;
+  margin-bottom: var(--space-md);
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  color: var(--color-muted);
+}
+
+.section {
+  margin: var(--space-xl) 0;
+  padding: var(--space-md);
+}
+
+.sectionTitle {
+  color: var(--color-black);
+  font-size: 1.5rem;
+  margin-bottom: var(--space-lg);
+  position: relative;
+  padding-left: var(--space-sm);
+}
+
+.sectionTitle::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 1.5rem;
+  background: var(--color-accent);
+}
+
+.timelineItem {
+  position: relative;
+  padding-left: var(--space-lg);
+  margin-bottom: var(--space-xl);
+}
+
+.timelineItem::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 12px;
+  height: 12px;
+  background: var(--color-accent);
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px rgba(var(--color-accent-rgb), 0.1);
+}
+
+.entryTitle {
+  font-size: 1.1rem;
+  color: var(--color-dark);
+  margin-bottom: var(--space-xs);
+}
+
+.entrySubtitle {
+  color: var(--color-muted);
+  margin-bottom: var(--space-xs);
+}
+
+.entryDate {
+  color: var(--color-black);
+  font-size: 0.9rem;
+}

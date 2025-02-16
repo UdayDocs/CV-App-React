@@ -1,0 +1,46 @@
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: var(--color-muted);
+  background-color: #f8fafc;
+}
+
+/* Base Typography */
+h1, h2, h3 {
+  color: var(--color-primary);
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+h1 { font-size: 2rem; }
+h2 { font-size: 1.5rem; }
+h3 { font-size: 1.25rem; }
+
+/* Interactive Elements */
+button {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--radius-sm);
+  transition: 
+    background-color var(--transition-fast),
+    transform var(--transition-fast);
+}
+
+button:hover {
+  background-color: var(--color-secondary);
+  transform: translateY(-1px);
+}
+
+input,
+textarea {
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: var(--space-xs);
+  transition: border-color var(--transition-normal);
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(var(--color-primary-rgb), 0.1);
+}

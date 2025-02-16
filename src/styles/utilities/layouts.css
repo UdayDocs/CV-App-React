@@ -1,0 +1,51 @@
+/* Grid System */
+.grid-side {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-xl);
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: var(--space-lg);
+  }
+  
+  /* Form Section */
+  .form-section {
+    background: var(--color-white);
+    padding: var(--space-lg);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    position: sticky;
+    top: var(--space-lg);
+    height: fit-content;
+    /* min-width: 500px; */
+  }
+  
+  /* CV Preview Section */
+  .cv-preview-section {
+    background: var(--color-white);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    padding: var(--space-xl);
+    min-height: 100vh;
+    backdrop-filter: blur(8px);
+    background: rgba(179, 53, 53, 0.95);
+    /* width: 850px; */
+
+  }
+  
+  @media (max-width: 768px) {
+    .grid-side {
+      grid-template-columns: 1fr;
+      padding: var(--space-md);
+    }
+    
+    .form-section {
+      position: static;
+      margin-bottom: var(--space-xl);
+    }
+
+
+
+
+
+  }
